@@ -22,7 +22,10 @@ class board():
     def get_grid(self):
         return self.grid
 
-   
+    # Need error handling, if the player inputs a invalid column
+    # Need to return something to indicate if the placement was successful
+    # Need to make a game class that does the placing of the piece instead of having it in board
+        # The game class should also have a run that keeps on asking the user for placement and checks to see if they won.
     def place_piece(self, player_color):
         # Let the user choose which column they want to place a piece at
         column = int(input("Choose which column to place piece: "))
@@ -37,10 +40,6 @@ class board():
 
         print(self.grid)
         
-
-        
-
-
 
 
 game = board(6, 6, 4)
